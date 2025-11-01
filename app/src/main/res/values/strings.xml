@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mastermind game</string>
+    <string name="you_cracked_it">You cracked it!</string>
+    <string name="times_up">Time\'s up!</string>
+    <string name="game_message">game</string>
+    <string name="check_btn">Check</string>
+    <string name="retry_btn">Retry</string>
+    <string name="secret_was">Secret was %1$s</string>
+    <string name="mastermind_title">Mastermind</string>
+</resources>

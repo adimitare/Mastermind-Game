@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacer_8">8dp</dimen>
+    <dimen name="spacer_12">12dp</dimen>
+    <dimen name="spacer_16">16dp</dimen>
+    <dimen name="spacer_20">20dp</dimen>
+    <dimen name="spacer_48">48dp</dimen>
+    <dimen name="spacer_64">64dp</dimen>
+</resources>
