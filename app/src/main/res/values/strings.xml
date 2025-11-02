@@ -7,4 +7,5 @@
     <string name="retry_btn">Retry</string>
     <string name="secret_was">Secret was %1$s</string>
     <string name="mastermind_title">Mastermind</string>
+    <string name="secret_message">Secret: %1$s</string>
 </resources>
