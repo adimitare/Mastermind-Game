@@ -58,7 +58,7 @@ fun GameScreen(onSuccess: (String) -> Unit, onTimeUp: (String) -> Unit) {
     val message by remember { mutableStateOf(formatGameDescriptionText() ) }
 
     // As per requirements print out the random string on the console for convenience
-    Log.d("Mastermind", "Secret: $secret")
+    Log.d(stringResource(R.string.app_name), stringResource(R.string.secret_message, secret))
 
     LaunchedEffect(secret) {
         remaining = REMAINING
