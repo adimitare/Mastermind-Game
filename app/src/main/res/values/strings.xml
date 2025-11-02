@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mastermind game</string>
+    <string name="app_name">Mastermind</string>
     <string name="you_cracked_it">You cracked it!</string>
     <string name="times_up">Time\'s up!</string>
     <string name="game_message">game</string>

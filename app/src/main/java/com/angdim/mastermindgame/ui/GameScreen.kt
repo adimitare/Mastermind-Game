@@ -40,6 +40,8 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
+import com.angdim.mastermindgame.Constants.DELAY
+import com.angdim.mastermindgame.Constants.REMAINING
 import com.angdim.mastermindgame.core.CharacterStatus.GREEN
 import com.angdim.mastermindgame.core.CharacterStatus.ORANGE
 import com.angdim.mastermindgame.core.CharacterStatus.RED
@@ -50,7 +52,7 @@ import com.angdim.mastermindgame.R
 @Composable
 fun GameScreen(onSuccess: (String) -> Unit, onTimeUp: (String) -> Unit) {
     var secret by remember { mutableStateOf(StateManager.provideSecret()) }
-    var remaining by remember { mutableStateOf(60) }
+    var remaining by remember { mutableStateOf(REMAINING) }
     var guess by remember { mutableStateOf(charArrayOf(' ', ' ', ' ', ' ')) }
     var eval by remember { mutableStateOf(listOf<CharacterStatus>()) }
     val message by remember { mutableStateOf(formatGameDescriptionText() ) }
@@ -59,9 +61,9 @@ fun GameScreen(onSuccess: (String) -> Unit, onTimeUp: (String) -> Unit) {
     Log.d("Mastermind", "Secret: $secret")
 
     LaunchedEffect(secret) {
-        remaining = 60
+        remaining = REMAINING
         while (remaining > 0) {
-            delay(1000)
+            delay(DELAY)
             remaining -= 1
         }
         if (remaining == 0) onTimeUp(secret)
