@@ -66,6 +66,12 @@ A word-guessing game for Android built with Jetpack Compose. Guess the 4-letter 
 6. **Lose**: Timer reaches 0:00 → Game Over screen
 7. **Retry**: Press "Retry" on either result screen to start a new game
 
+### Screenshots
+
+| <img src="https://github.com/user-attachments/assets/bf327229-073c-4834-8783-3a627f97c69b" alt="Success Game Screen" width="320"> | <img src="https://github.com/user-attachments/assets/b7a1a639-7211-4338-8d30-78039cecd1a4" alt="Failure Game Screen" width="320"> |
+|:---:|:---:|
+| Success Game Screen | Failure Game Screen |
+
 ## Project Structure
 
 ```
